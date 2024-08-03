@@ -57,6 +57,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Remove="Views\LoginPage.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Platforms\Android\Resources\xml\network_security_config.xml" />
 	  <None Remove="Resources\Images\AppLoginBG.jpg" />
 	  <None Remove="Resources\Images\logo.jpg" />
@@ -75,14 +79,15 @@
 	  <Folder Include="Models\" />
 	  <Folder Include="GlobalObjects\" />
 	  <Folder Include="Tools\" />
-	  <Folder Include="Services\" />
-	  <Folder Include="ViewModels\" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\LoginPage.xaml">
+	  <MauiFont Include="Views\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
+	  </MauiFont>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Views\UserSignUpPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
