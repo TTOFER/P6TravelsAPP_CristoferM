@@ -13,11 +13,15 @@
 
         <Entry x:Name="TxtPassword"  Placeholder="Password" Keyboard="Text"/>
 
-        <Picker x:Name="LstUserRoles"  Title="Select User Role"/>
+        <Picker x:Name="LstUserRoles"  Title="Select User Role" ItemDisplayBinding="{Binding UserRoleDescription}"/>
 
-        <Button x:Name="BtnAdd" Text="Add User"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <Button x:Name="BtnAdd" Text="Add User" Clicked="BtnAdd_Clicked" BackgroundColor="Green" TextColor="WhiteSmoke" FontAttributes="Bold" CornerRadius="15" WidthRequest="160" Margin="0,0,20,0"/>
 
-        <Button x:Name="BtnCancel" Text="Cancel" Clicked="BtnCancel_Clicked"/>
+            <Button x:Name="BtnCancel" Text="Cancel" Clicked="BtnCancel_Clicked" BackgroundColor="Maroon" TextColor="WhiteSmoke" CornerRadius="15" WidthRequest="160" Margin="0,0,20,0"/>
+        </StackLayout>
+
+        
 
     </VerticalStackLayout>
 </ContentPage>
