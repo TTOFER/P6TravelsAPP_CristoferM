@@ -13,7 +13,7 @@ namespace P6TravelsAPP_CristoferM.Services
         //o con IP -> 85.25.45.10/api o local -> 192.168.100.9/api
 
         //variable
-        public static string BaseURL = "http://192.168.100.9:45455/api/";
+        public static string BaseURL = "http://192.168.100.9:45457/api/";
 
         //incluir info de seguridad
         //para los end point del API
